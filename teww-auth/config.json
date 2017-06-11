@@ -1,0 +1,18 @@
+{
+    "db_service":{
+        "host": "db",
+        "port": 6379
+    },
+    "client_service": {
+        "host": "client",
+        "port": 3000
+    },
+    "auth_service": {
+        "host": "auth",
+        "port": 3001
+    },
+    "item_service": {
+        "host": "backend",
+        "port": 3002
+    }
+}

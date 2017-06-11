@@ -1,0 +1,52 @@
+version: '3'
+services:
+
+  auth:
+    build: ./teww-auth
+    container_name: auth
+    restart: always
+    expose:
+      - "3001"
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      HMAC_SECRET: "test"
+      EXPIRATION_TIME: "7200"
+
+  backend:
+    build: ./teww-backend
+    container_name: backend
+    restart: always
+    expose:
+      - "3002"
+    depends_on:
+      - db
+    links:
+      - db
+
+  client:
+    build: ./teww-client
+    container_name: client
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - auth
+      - backend
+      - db
+    links:
+      - auth
+      - backend
+      - db
+
+  db:
+    image: redis:latest
+    container_name: db
+    expose:
+      - "6379"
+    volumes:
+      - redis_data:/data
+volumes:
+  redis_data:

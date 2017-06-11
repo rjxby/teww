@@ -1,0 +1,25 @@
+memo = "e1599dfa503da75eb48f97bca868915ab4e463d711c8903263b7146315a6d8ec"
+
+[[projects]]
+  name = "github.com/codegangsta/negroni"
+  packages = ["."]
+  revision = "fde5e16d32adc7ad637e9cd9ad21d4ebc6192535"
+  version = "v0.2.0"
+
+[[projects]]
+  name = "github.com/dgrijalva/jwt-go"
+  packages = ["."]
+  revision = "d2709f9f1f31ebcda9651b03077758c1f3a0018c"
+  version = "v3.0.0"
+
+[[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+  version = "v1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "392c28fe23e1c45ddba891b0320b3b5df220beea"
+  version = "v1.3.0"

@@ -1,0 +1,25 @@
+memo = "b1a3f95432b9a0624fc7e531b34b48ffad993a96cc6844602c0f7d52d08845ab"
+
+[[projects]]
+  name = "github.com/codegangsta/negroni"
+  packages = ["."]
+  revision = "fde5e16d32adc7ad637e9cd9ad21d4ebc6192535"
+  version = "v0.2.0"
+
+[[projects]]
+  name = "github.com/garyburd/redigo"
+  packages = ["internal","redis"]
+  revision = "8873b2f1995f59d4bcdd2b0dc9858e2cb9bf0c13"
+  version = "v1.0.0"
+
+[[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+  version = "v1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "392c28fe23e1c45ddba891b0320b3b5df220beea"
+  version = "v1.3.0"
